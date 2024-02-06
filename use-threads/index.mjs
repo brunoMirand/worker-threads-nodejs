@@ -1,7 +1,9 @@
 import os from 'node:os';
-import internal from 'node:stream';
-import { Worker } from 'node:worker_threads';
+import { Worker, isMainThread } from 'node:worker_threads';
 
+if (isMainThread) {
+  console.log('Main Thread');
+}
 console.log('Testing my software');
 const numberOfCPUs = os.cpus().length;
 console.log(`Im have ${numberOfCPUs} cpus`);
