@@ -1,10 +1,11 @@
 # USE THREADS IN NODE JS.
 
+###  Node.js is not single threaded, event-loop is single threaded
+
 
 ### Objective
 - Execute a blocking operation in nodejs
 - Execute the same blocking operation, but using threads
-
 
 Run:
 
